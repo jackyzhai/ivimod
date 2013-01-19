@@ -1,7 +1,0 @@
-IVI Project, CERNET
-create:                                2008.11.05  Hong Zhang
-2010-09-19
-	fix a bug: ivi_partialstate.h
-	sturct ivi_ps, the member arrays should use 8192
-2010-06-03
-	fix a partialstate bug about time & jiffies
