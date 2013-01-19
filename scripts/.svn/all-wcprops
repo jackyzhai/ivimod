@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/ivi/!svn/ver/83/trunk/scripts
+END
+clean
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/ivi/!svn/ver/72/trunk/scripts/clean
+END
+ivi-init
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/ivi/!svn/ver/82/trunk/scripts/ivi-init
+END

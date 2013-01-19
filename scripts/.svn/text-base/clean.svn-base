@@ -1,0 +1,4 @@
+rmmod ivi
+rmmod ivi_portmapping
+rmmod ivi_stateful
+rmmod ivi_partialstate

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/ivi/!svn/ver/77/trunk/scripts/hgi_beacon
+END
+addr.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ivi/!svn/ver/67/trunk/scripts/hgi_beacon/addr.sh
+END
+ivi.log
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ivi/!svn/ver/67/trunk/scripts/hgi_beacon/ivi.log
+END
+route.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/ivi/!svn/ver/67/trunk/scripts/hgi_beacon/route.sh
+END
+all
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ivi/!svn/ver/67/trunk/scripts/hgi_beacon/all
+END
+log.sh
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ivi/!svn/ver/67/trunk/scripts/hgi_beacon/log.sh
+END
+startup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/ivi/!svn/ver/76/trunk/scripts/hgi_beacon/startup.sh
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ivi/!svn/ver/67/trunk/scripts/hgi_beacon/README
+END
+ivimap.sh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/ivi/!svn/ver/77/trunk/scripts/hgi_beacon/ivimap.sh
+END

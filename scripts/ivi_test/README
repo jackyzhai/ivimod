@@ -1,0 +1,7 @@
+startup.sh
+dibbler.sh (assign ipv6 address to eth0.1)
+eth0-addr.sh (assign ipv6/v4 address to eth0.0)
+run /etc/init.d/radvd to start radvd
+route.sh
+ivimap.sh
+

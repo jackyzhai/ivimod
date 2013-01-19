@@ -1,0 +1,25 @@
+#!/bin/sh
+
+# IVI start script
+# Copyright (C) 2009 Tsinghua University
+
+# assign addresses 
+#---------------------------------------------
+ip addr add 202.112.61.202/30 dev eth0 
+ip -6 addr add 2001:250:aaa0:103:3::1/64 dev eth1 
+
+# IVI core configuration (eth0=IPv4; eth1=IPv6)
+#---------------------------------------------
+
+ip route add 202.38.110.0/24 via 10.0.0.2 dev ivi0
+/root/ivi2/utils/ivimap -4 -M -R 4 -p 2001:da8:a6a5:: -l 48 -P 2001:da8:a6a5:: -L 48 -B -c 10.0.0.2
+#ip -6 route add 2001:da8:a6a5:ca26:6e00::/72 via 2001:250:aaa0:103:3::2 dev eth1
+ip -6 route add 2001:da8:a6a5:ca26:6e01:4000::/128 via 2001:250:aaa0:103:3::2 dev eth1
+ip -6 route add 2001:da8:a6a5:ca26:6e01:4001::/128 via 2001:250:aaa0:103:3::3 dev eth1
+
+ip -6 route add 2001:da8:a6a5::/48 via fec0::2 dev ivi1
+/root/ivi2/utils/ivimap -6 -l 48 -L 48 -B fec0::2
+ip route add default via 202.112.61.201 dev eth0
+
+#---
+

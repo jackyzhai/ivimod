@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/ivi/!svn/ver/68/trunk/scripts/pingbeacon
+END
+addr.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ivi/!svn/ver/68/trunk/scripts/pingbeacon/addr.sh
+END
+ivi.log
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/ivi/!svn/ver/66/trunk/scripts/pingbeacon/ivi.log
+END
+route.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/ivi/!svn/ver/66/trunk/scripts/pingbeacon/route.sh
+END
+all
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/ivi/!svn/ver/66/trunk/scripts/pingbeacon/all
+END
+log.sh
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ivi/!svn/ver/66/trunk/scripts/pingbeacon/log.sh
+END
+startup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/ivi/!svn/ver/66/trunk/scripts/pingbeacon/startup.sh
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ivi/!svn/ver/66/trunk/scripts/pingbeacon/README
+END
+ivimap.sh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/ivi/!svn/ver/66/trunk/scripts/pingbeacon/ivimap.sh
+END

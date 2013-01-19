@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/ivi/!svn/ver/74/trunk/scripts/partialstate4
+END
+addr.sh
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/ivi/!svn/ver/74/trunk/scripts/partialstate4/addr.sh
+END
+ivi.log
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/ivi/!svn/ver/69/trunk/scripts/partialstate4/ivi.log
+END
+route.sh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/ivi/!svn/ver/69/trunk/scripts/partialstate4/route.sh
+END
+all
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ivi/!svn/ver/69/trunk/scripts/partialstate4/all
+END
+log.sh
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/ivi/!svn/ver/69/trunk/scripts/partialstate4/log.sh
+END
+startup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ivi/!svn/ver/72/trunk/scripts/partialstate4/startup.sh
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/ivi/!svn/ver/69/trunk/scripts/partialstate4/README
+END
+ivimap.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/ivi/!svn/ver/74/trunk/scripts/partialstate4/ivimap.sh
+END

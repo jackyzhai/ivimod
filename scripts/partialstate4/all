@@ -1,0 +1,10 @@
+#!/bin/sh /etc/rc.common
+# IVI start script
+# Copyright (C) 2009 Tsinghua University
+IVIPATH="/home/jacky/src/ivimod/trunk"
+. $IVIPATH/scripts/partialstate4/startup.sh
+. $IVIPATH/scripts/partialstate4/addr.sh
+. $IVIPATH/scripts/partialstate4/route.sh
+. $IVIPATH/scripts/partialstate4/ivimap.sh
+. $IVIPATH/scripts/partialstate4/log.sh
+echo start ivi

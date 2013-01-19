@@ -1,0 +1,1 @@
+date >> $IVIPATH/ivi.log

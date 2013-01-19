@@ -1,0 +1,1871 @@
+cscope 15 $HOME/src/ivimod/trunk/utils -q 0000000130 0000011587
+	@ivimap.c
+
+4 
+	~<gë›t.h
+>
+
+5 
+	~<°dio.h
+>
+
+6 
+	~<°dlib.h
+>
+
+7 
+	~<°dboﬁ.h
+>
+
+8 
+	~<√töë/ö.h
+>
+
+9 
+	~<löux/if.h
+>
+
+10 
+	~<°rög.h
+>
+
+11 
+	~"ivim≠.h
+"
+
+12 
+›ti⁄
+ c⁄° 
+	gl⁄g›ts
+[]=
+
+14 {"§˝ªfix", 
+ªquúed_¨gumít
+, 
+NULL
+, 'p'},
+
+15 {"d°¥efix", 
+ªquúed_¨gumít
+, 
+NULL
+, 'P'},
+
+16 {"øtio4", 
+ªquúed_¨gumít
+, 
+NULL
+, 'r'},
+
+17 {"øtio6", 
+ªquúed_¨gumít
+, 
+NULL
+, 'R'},
+
+18 {"§˛í", 
+ªquúed_¨gumít
+, 
+NULL
+, 'l'},
+
+19 {"d°Àn", 
+ªquúed_¨gumít
+, 
+NULL
+, 'L'},
+
+20 {"hgi4off£t",
+ªquúed_¨gumít
+, 
+NULL
+, 'o'},
+
+21 {"∑πül°©e4", 
+ªquúed_¨gumít
+, 
+NULL
+, 'z'},
+
+22 {"icmp_âl_¥efix", 
+no_¨gumít
+, 
+NULL
+, 't'},
+
+23 {"mu…ùÀx6", 
+no_¨gumít
+, 
+NULL
+, 'M'},
+
+24 {"mu…ùÀx4", 
+no_¨gumít
+, 
+NULL
+, 'm'},
+
+25 {"hgi4", 
+no_¨gumít
+, 
+NULL
+, 'H'},
+
+26 {"°©eful6", 
+no_¨gumít
+, 
+NULL
+, 's'},
+
+27 {"hñp", 
+no_¨gumít
+, 
+NULL
+, 'h'},
+
+28 {"mss˛ampög",
+no_¨gumít
+, 
+NULL
+, 'c'},
+
+29 {"pögbóc⁄", 
+no_¨gumít
+, 
+NULL
+, 'b'},
+
+30 {
+NULL
+, 
+no_¨gumít
+, NULL, 0}
+
+33 
+	g›î©i⁄
+ = 0;
+
+34 
+boﬁ
+ 
+	gmu…i6
+ = 
+Ál£
+;
+
+35 
+boﬁ
+ 
+	gmu…i4
+ = 
+Ál£
+;
+
+36 
+boﬁ
+ 
+	gicmp_âl_å™s
+ = 
+Ál£
+;
+
+37 
+boﬁ
+ 
+	ghgi4
+ = 
+Ál£
+;
+
+38 
+boﬁ
+ 
+	g°©eful6
+ = 
+Ál£
+;
+
+39 
+boﬁ
+ 
+	gmss˛ampög
+ = 
+Ál£
+;
+
+40 
+boﬁ
+ 
+	gpögbóc⁄
+ = 
+Ál£
+;
+
+41 
+boﬁ
+ 
+	gps4
+ = 
+Ál£
+;
+
+43 
+ö_addr
+ 
+	gödex46
+;
+
+44 
+ö_addr
+ 
+	gicmp_âl_¥efix
+;
+
+45 
+ö_addr
+ 
+	gps4¥efix
+;
+
+46 
+ö6_addr
+ 
+	g§˝46
+;
+
+47 
+ö6_addr
+ 
+	gd°p46
+;
+
+48 
+__u8
+ 
+	g§˛
+ = 40;
+
+49 
+__u8
+ 
+	gd°l
+ = 40;
+
+50 
+__u16
+ 
+	gøtio4
+ = 1;
+
+51 
+__u16
+ 
+	gøtio6
+ = 1;
+
+52 
+__u16
+ 
+	ghgi4_off£t
+ = 0;
+
+55 
+ö6_addr
+ 
+	gödex64
+;
+
+56 
+__u8
+ 
+	gmode64
+ = 0;
+
+59 
+	$ußge
+(
+°©us
+)
+
+61 i‡(
+°©us
+ !
+EXIT_SUCCESS
+)
+
+62 
+	`Ârötf
+ (
+°dîr
+, "Try `ivimap --help' for more information.\n");
+
+64 
+	`¥ötf
+("\
+: ivimap -4 [mapping4_options] IPv4_ADDR\n\
+(used for insertá 4-to-6 mapping)\n\
+ -6 [mapping6_options] IPv6_ADDR\n\
+(user for insertá 6-to-4 mapping)\n\
+\n\
+4-to-6 mapping4_options:\n\
+-p --srcprefix SRCPREFIX\n\
+Åhe sourceÖrefix used inÅhe 4-to-6Åranslation\n\
+-P --dstprefix DSTPREFIX\n\
+Åhe destinationÖrefix used inÅhe 4-to-6Åranslation\n\
+\n\
+-l --srclen [SRC PREFIX LENGTH]\n\
+Åhe sourceÖrefixÜength used in 4-to-6Åranslation\n\
+-L --dstlen [DST PREFIX LENGTH]\n\
+Åhe destinationÖrefixÜength usedÅo 4-to-6Åranslation\n\
+-c --mssclamping\n\
+ÅhatÅhe 4-to-6 mapping usesÅcp mss clamping. \n\
+.e.Ñeduce 20 in TCP syn message\n\
+4-side Multiplexing:\n\
+-m --multiplex4\n\
+ÅhatÅhe IPv4-sideÇetwork is multiplexed\n\
+-r --ratio4 RATIO\n\
+Åhat multiplexÑatio of IPv4-side.\n\
+ with -m (--multiplex4),Åhe default is 1\n\
+4 mode:\n\
+-H --hgi4\n\
+ÅhatÅhe IPv4-side multiplexing is used withÖort shifting\n\
+ with -m (--multiplex4)\n\
+-o --hgi4offset\n\
+Åhe offset of hgi4 multiplexing.Åhe default is 0\n\
+ with -m, -H\n\
+ State:\n\
+-z --partialstate4Örefix\n\
+ÅheÇetworkÖrefix of hgi connectedÇetwork\n\
+6-side Multiplexing:\n\
+-M --multiplex6\n\
+ÅhatÅhe IPv6-sideÇetwork is multiplexed\n\
+ shouldÇot be used with -s (--stateful6)\n\
+-R --ratio6 RATIO\n\
+Åhat multiplexÑatio of IPv6-side.\n\
+ with -M (--multiplex6),Åhe default is 1\n\
+-s --stateful6\n\
+ÅhatÅhe IPv6-side NAT is stateful\n\
+ shouldÇot be used with -M\n\
+-b --pingbeacon\n\
+Öing beacon\n\
+6-to-4 mapping options:\n\
+-l --srclen [SRC PREFIX LENGTH]\n\
+Åhe sourceÖrefixÜength used in 6-to-4Åranslation\n\
+-L --dstlen [DST PREFIX LENGTH]\n\
+Åhe destinationÖrefixÜength usedÅo 6-to-4Åranslation\n\
+-t --icmp_ttl_prefix\n\
+Åhe sourceáddress in icmp-time-exceedÖacket\n\
+4-side Multiplexing:\n\
+-H --hgi4\n\
+ÅhatÅhe IPv4-side multiplexing is used withÖort shifting\n\
+ with -m (--multiplex4)\n\
+6-side Multiplexing:\n\
+-s --stateful6\n\
+ÅhatÅhe IPv6-side NAT is stateful\n\
+ shouldÇot be used with -M\n\
+-b --pingbeacon\n\
+Öing beacon\n\
+\n\
+");
+
+131 
+	`exô
+(
+°©us
+);
+
+132 
+	}
+}
+
+134 
+	$ö£π_m4
+()
+
+136 
+m≠pög_íåy4
+ 
+m4
+;
+
+137 
+i‰eq
+ 
+ªq
+;
+
+138 
+sock_fd
+;
+
+139 
+	`mem£t
+(&
+m4
+, 0, (
+m≠pög_íåy4
+));
+
+140 
+m4
+.
+ödex
+ = 
+ödex46
+;
+
+141 
+m4
+.
+§˝
+ = 
+§˝46
+;
+
+142 
+m4
+.
+d°p
+ = 
+d°p46
+;
+
+143 
+m4
+.
+§˛
+ = srcl;
+
+144 
+m4
+.
+d°l
+ = dstl;
+
+145 
+m4
+.
+§c_øtio
+ = 
+øtio4
+;
+
+146 
+m4
+.
+d°_øtio
+ = 
+øtio6
+;
+
+147 
+m4
+.
+hgi4_off£t
+ = hgi4_offset;
+
+148 i‡(
+mu…i6
+ && 
+°©eful6
+){
+
+149 
+	`Ârötf
+(
+°dîr
+, "6HOST 1:N stateless modeánd stateful IVI mode couldÇotÉxistÅogether\n");
+
+150 
+	`exô
+–
+EXIT_FAILURE
+ );
+
+152 i‡(
+mu…i4
+)
+
+153 
+m4
+.
+mode
+ |
+IVI_4HOST_MULTIPLEX
+;
+
+154 i‡(
+mu…i6
+)
+
+155 
+m4
+.
+mode
+ |
+IVI_6HOST_MULTIPLEX
+;
+
+156 i‡(
+hgi4
+)
+
+157 
+m4
+.
+mode
+ |
+IVI_HGI4
+;
+
+158 i‡(
+°©eful6
+)
+
+159 
+m4
+.
+mode
+ |
+IVI_6HOST_STATEFUL
+;
+
+160 i‡(
+mss˛ampög
+)
+
+161 
+m4
+.
+mode
+ |
+IVI_MSS_CLAMPING
+;
+
+162 i‡(
+pögbóc⁄
+)
+
+163 
+m4
+.
+mode
+ |
+IVI_PING_BEACON
+;
+
+164 i‡(
+ps4
+){
+
+165 
+m4
+.
+mode
+ |
+IVI_PS4
+;
+
+166 
+m4
+.
+hgi_¥efix
+ = 
+ps4¥efix
+.
+s_addr
+;
+
+168 
+m4
+.
+îr‹
+ = 0;
+
+169 
+	`mem£t
+(&
+ªq
+, 0, (
+i‰eq
+));
+
+170 
+	`°r˝y
+(
+ªq
+.
+i‰_«me
+, "ivi0");
+
+171 
+ªq
+.
+i‰_d©a
+ = (*)&
+m4
+;
+
+172 
+sock_fd
+ = 
+	`sockë
+(
+AF_INET
+, 
+SOCK_DGRAM
+, 0);
+
+173 i‡(
+	`io˘l
+(
+sock_fd
+, 
+IVI_IOC_ADD4
+, &
+ªq
+) < 0){
+
+174 
+	`Ârötf
+(
+°dîr
+, "mapping_entry4 ioctlÉrror!\n");
+
+175 
+	`exô
+–
+EXIT_FAILURE
+);
+
+177 
+	}
+}
+
+179 
+	$ö£π_m6
+()
+
+181 
+m≠pög_íåy6
+ 
+m6
+;
+
+182 
+i‰eq
+ 
+ªq
+;
+
+183 
+sock_fd
+;
+
+184 
+	`mem£t
+(&
+m6
+, 0, (
+m≠pög_íåy6
+));
+
+185 
+m6
+.
+ödex
+ = 
+ödex64
+;
+
+186 
+m6
+.
+§˛
+ = srcl;
+
+187 
+m6
+.
+d°l
+ = dstl;
+
+188 
+m6
+.
+mode
+ = 0;
+
+189 i‡(
+hgi4
+)
+
+190 
+m6
+.
+mode
+ |
+IVI_HGI4
+;
+
+191 i‡(
+°©eful6
+)
+
+192 
+m6
+.
+mode
+ |
+IVI_6HOST_STATEFUL
+;
+
+193 i‡(
+pögbóc⁄
+)
+
+194 
+m6
+.
+mode
+ |
+IVI_PING_BEACON
+;
+
+195 i‡(
+icmp_âl_å™s
+){
+
+196 
+m6
+.
+mode
+ |
+IVI_TRACERT_ADDR_TRANS
+;
+
+197 
+m6
+.
+icmp_âl_¥efix
+ = icmp_âl_¥efix.
+s_addr
+;
+
+199 
+m6
+.
+îr‹
+ = 0;
+
+200 
+	`mem£t
+(&
+ªq
+, 0, (
+i‰eq
+));
+
+201 
+	`°r˝y
+(
+ªq
+.
+i‰_«me
+, "ivi0");
+
+202 
+ªq
+.
+i‰_d©a
+ = (*)&
+m6
+;
+
+203 
+sock_fd
+ = 
+	`sockë
+(
+AF_INET
+, 
+SOCK_DGRAM
+, 0);
+
+204 i‡(
+	`io˘l
+(
+sock_fd
+, 
+IVI_IOC_ADD6
+, &
+ªq
+) < 0){
+
+205 
+	`Ârötf
+(
+°dîr
+, "mapping_entry6 ioctlÉrror!\n");
+
+206 
+	`exô
+–
+EXIT_FAILURE
+);
+
+208 
+	}
+}
+
+210 
+	$ivim≠_öô
+()
+
+212 
+	`öë_±⁄
+(
+AF_INET6
+, "2001:da9:ff00::", &
+§˝46
+);
+
+213 
+	`öë_±⁄
+(
+AF_INET6
+, "2001:da9:ff00::", &
+d°p46
+);
+
+214 
+	}
+}
+
+216 
+	$maö
+(
+¨gc
+, **
+¨gv
+)
+
+218 
+›tc
+, 
+tmp
+;
+
+219 
+	`ivim≠_öô
+();
+
+220 
+›tc
+ = 
+	`gë›t_l⁄g
+(
+¨gc
+, 
+¨gv
+, "46h", 
+l⁄g›ts
+, 
+NULL
+);
+
+221 
+›tc
+)
+
+224 
+›î©i⁄
+ = 0;
+
+227 
+›î©i⁄
+ = 1;
+
+230 
+	`ußge
+(
+EXIT_SUCCESS
+);
+
+233 
+	`Ârötf
+(
+°dîr
+, "You MUST specify -4 or -6 first\n");
+
+234 
+	`ußge
+(
+EXIT_FAILURE
+);
+
+236 (
+›tc
+ = 
+	`gë›t_l⁄g
+(
+¨gc
+, 
+¨gv
+, "z:t:l:L:p:P:r:R:o:mMhHscb", 
+l⁄g›ts
+, 
+NULL
+)) != -1)
+
+238 
+›tc
+)
+
+241 
+mu…i4
+ = 
+åue
+;
+
+244 if(
+°©eful6
+){
+
+245 
+	`Ârötf
+(
+°dîr
+, "stateful modeánd multiplex 6 shouldÇot be usedÅogether\n");
+
+246 
+	`ußge
+(
+EXIT_FAILURE
+);
+
+248 
+mu…i6
+ = 
+åue
+;
+
+251 i‡(
+›î©i⁄
+){
+
+252 
+	`Ârötf
+(
+°dîr
+, "-r shouldÇot be used with -6\n");
+
+253 
+	`ußge
+(
+EXIT_FAILURE
+);
+
+255 
+øtio4
+ = 
+	`©oi
+(
+›èrg
+);
+
+258 i‡(
+›î©i⁄
+){
+
+259 
+	`Ârötf
+(
+°dîr
+, "-R shouldÇot be used with -6\n");
+
+260 
+	`ußge
+(
+EXIT_FAILURE
+);
+
+262 
+øtio6
+ = 
+	`©oi
+(
+›èrg
+);
+
+265 
+mu…i4
+ = 
+åue
+;
+
+266 
+hgi4
+ = 
+åue
+;
+
+269 if(
+mu…i6
+){
+
+270 
+	`Ârötf
+(
+°dîr
+, "stateful modeánd multiplex 6 shouldÇot be usedÅogether\n");
+
+271 
+	`ußge
+(
+EXIT_FAILURE
+);
+
+273 
+°©eful6
+ = 
+åue
+;
+
+276 if(
+	`öë_±⁄
+(
+AF_INET6
+, 
+›èrg
+, &
+§˝46
+) < 0){
+
+277 
+	`Ârötf
+(
+°dîr
+, "Please checkÅheáddress format of srcÖrefix\n");
+
+278 
+	`ußge
+(
+EXIT_FAILURE
+);
+
+282 if(
+	`öë_±⁄
+(
+AF_INET6
+, 
+›èrg
+, &
+d°p46
+) < 0){
+
+283 
+	`Ârötf
+(
+°dîr
+, "Pless checkÅheáddress format of dstÖrefix\n");
+
+284 
+	`ußge
+(
+EXIT_FAILURE
+);
+
+288 
+ps4
+ = 
+åue
+;
+
+289 if(
+	`öë_©⁄
+(
+›èrg
+, &
+ps4¥efix
+) == 0){
+
+290 
+	`Ârötf
+(
+°dîr
+, "Please checkÅheáddress format ofÖartial stateÖrefix\n");
+
+291 
+	`ußge
+(
+EXIT_FAILURE
+);
+
+295 
+tmp
+ = 
+	`©oi
+(
+›èrg
+);
+
+296 
+hgi4_off£t
+ = 
+tmp
+;
+
+299 
+§˛
+ = 
+	`©oi
+(
+›èrg
+);
+
+302 
+d°l
+ = 
+	`©oi
+(
+›èrg
+);
+
+305 
+mss˛ampög
+ = 
+åue
+;
+
+308 
+pögbóc⁄
+ = 
+åue
+;
+
+311 
+icmp_âl_å™s
+ = 
+åue
+;
+
+312 i‡(
+	`öë_©⁄
+(
+›èrg
+, &
+icmp_âl_¥efix
+) == 0){
+
+313 
+	`Ârötf
+(
+°dîr
+, "Please checkÅheáddress format of icmp_ttl_prefix\n");
+
+314 
+	`ußge
+(
+EXIT_FAILURE
+);
+
+318 
+	`ußge
+(
+EXIT_FAILURE
+);
+
+321 i‡(
+›töd
+ !
+¨gc
+ - 1){
+
+322 
+	`Ârötf
+(
+°dîr
+, "There should be oneánd only oneárgument\n");
+
+323 
+	`ußge
+(
+EXIT_FAILURE
+);
+
+325 i‡(
+›î©i⁄
+ == 0) {
+
+326 i‡(
+	`öë_©⁄
+(
+¨gv
+[
+›töd
+], &
+ödex46
+) == 0){
+
+327 
+	`Ârötf
+(
+°dîr
+, "Wrong IPv4áddress format\n");
+
+328 
+	`ußge
+(
+EXIT_FAILURE
+);
+
+330 
+	`ö£π_m4
+();
+
+333 i‡(
+	`öë_±⁄
+(
+AF_INET6
+, 
+¨gv
+[
+›töd
+], &
+ödex64
+) < 0){
+
+334 
+	`Ârötf
+(
+°dîr
+, "Wrong IPv6áddress format\n");
+
+335 
+	`ußge
+(
+EXIT_FAILURE
+);
+
+337 
+	`ö£π_m6
+();
+
+339  
+EXIT_SUCCESS
+;
+
+340 
+	}
+}
+
+	@ivimap_old.c
+
+8 
+	~<sys/io˘l.h
+>
+
+9 
+	~<löux/sockios.h
+>
+
+10 
+	~<°dlib.h
+>
+
+11 
+	~<î∫o.h
+>
+
+12 
+	~<°rög.h
+>
+
+13 
+	~<löux/sockë.h
+>
+
+14 
+	~<√töë/ö.h
+>
+
+15 
+	~<¨∑/öë.h
+>
+
+16 
+	~<uni°d.h
+>
+
+17 
+	~<löux/rouã.h
+>
+
+18 
+	~<löux/√tdevi˚.h
+>
+
+19 
+	~<löux/if.h
+>
+
+20 
+	~<°dio.h
+>
+
+22 
+	~"ivim≠.h
+"
+
+24 
+	$maö
+(
+¨gc
+, *
+¨gv
+[])
+
+26 
+ö_addr
+ 
+ödex
+;
+
+27 
+m≠pög_íåy4
+ 
+m≠4
+;
+
+28 
+m≠pög_íåy4
+ * 
+ªt4
+;
+
+29 
+m≠pög_íåy6
+ 
+m≠6
+;
+
+30 
+m≠pög_íåy6
+ * 
+ªt6
+;
+
+31 
+i‰eq
+ 
+ªq
+;
+
+32 
+sock_fd
+;
+
+34 i‡(
+¨gc
+ == 8)
+
+35 
+m≠4
+.
+off£t
+ = 
+	`©oi
+(
+¨gv
+[7]);
+
+36 i‡(
+¨gc
+ == 7)
+
+37 
+m≠4
+.
+off£t
+ = 0xFFFF;
+
+38 i‡(
+¨gc
+ == 4)
+
+39 
+m≠6
+.
+off£t
+ = 0;
+
+40 i‡(
+¨gc
+ == 5)
+
+41 
+m≠6
+.
+off£t
+ = 
+	`©oi
+(
+¨gv
+[4]);
+
+44 
+	`¥ötf
+("Invalidárgument!\n");
+
+48 i‡((
+sock_fd
+ = 
+	`sockë
+(
+AF_INET
+, 
+SOCK_DGRAM
+, 0)) < 0)
+
+50 
+	`¥ötf
+("Socket Error!\n");
+
+54 i‡(
+¨gc
+ == 4 ||árgc == 5)
+
+57 i‡(
+	`öë_±⁄
+(
+AF_INET6
+, 
+¨gv
+[1], &(
+m≠6
+.
+ödex
+)) < 0)
+
+59 
+	`¥ötf
+("Wrong IPv6 Gateway!\n");
+
+63 
+m≠6
+.
+§˛
+=
+	`©oi
+(
+¨gv
+[2]);
+
+64 
+m≠6
+.
+d°l
+=
+	`©oi
+(
+¨gv
+[3]);
+
+66 
+m≠6
+.
+îr‹
+ = 0;
+
+68 
+	`°∫˝y
+(
+ªq
+.
+i‰_«me
+, "ivi0", (req.ifr_name)-1);
+
+69 
+ªq
+.
+i‰_d©a
+ = (*)&
+m≠6
+;
+
+72 i‡(
+	`io˘l
+(
+sock_fd
+, 
+IVI_IOC_ADD6
+, &
+ªq
+) < 0)
+
+74 
+	`¥ötf
+("ioctlÉrror!\n");
+
+78 
+	`˛o£
+(
+sock_fd
+);
+
+80 
+ªt6
+ = (
+m≠pög_íåy6
+ *)(
+ªq
+.
+i‰_d©a
+);
+
+81 i‡(
+ªt6
+->
+îr‹
+ != 0)
+
+83 
+	`¥ötf
+("Eº‹ No.%u\n",
+ªt6
+->
+îr‹
+);
+
+93 
+	`öë_©⁄
+(
+¨gv
+[1], &(
+m≠4
+.
+ödex
+));
+
+95 i‡(
+	`öë_±⁄
+(
+AF_INET6
+, 
+¨gv
+[2], &(
+m≠4
+.
+§˝
+)) < 0)
+
+97 
+	`¥ötf
+("Wrong sourceÖrefix!\n");
+
+100 
+m≠4
+.
+§˛
+=
+	`©oi
+(
+¨gv
+[3]);
+
+102 i‡(
+	`öë_±⁄
+(
+AF_INET6
+, 
+¨gv
+[4], &(
+m≠4
+.
+d°p
+)) < 0)
+
+104 
+	`¥ötf
+("Wrong destinationÖrefix!\n");
+
+107 
+m≠4
+.
+d°l
+ = 
+	`©oi
+(
+¨gv
+[5]);
+
+108 
+m≠4
+.
+øtio
+ = 
+	`©oi
+(
+¨gv
+[6]);
+
+109 
+m≠4
+.
+îr‹
+ = 0;
+
+111 
+	`°∫˝y
+(
+ªq
+.
+i‰_«me
+, "ivi0", (req.ifr_name)-1);
+
+112 
+ªq
+.
+i‰_d©a
+ = (*)&
+m≠4
+;
+
+115 i‡(
+	`io˘l
+(
+sock_fd
+, 
+IVI_IOC_ADD4
+, &
+ªq
+) < 0)
+
+117 
+	`¥ötf
+("ioctlÉrror!\n");
+
+121 
+	`˛o£
+(
+sock_fd
+);
+
+123 
+ªt4
+ = (
+m≠pög_íåy4
+ *)(
+ªq
+.
+i‰_d©a
+);
+
+124 i‡(
+ªt4
+->
+îr‹
+ != 0)
+
+126 
+	`¥ötf
+("Eº‹ No.%u\n",
+ªt4
+->
+îr‹
+);
+
+132 
+	}
+}
+
+	@udpping.c
+
+1 
+	~<°dio.h
+>
+
+2 
+	~<°rög.h
+>
+
+3 
+	~<sys/sockë.h
+>
+
+4 
+	~<√töë/ö.h
+>
+
+5 
+	~<sys/ty≥s.h
+>
+
+6 
+	~<°dlib.h
+>
+
+7 
+	~<î∫o.h
+>
+
+8 
+	~<°rög.h
+>
+
+9 
+	~<gë›t.h
+>
+
+10 
+	~<sig«l.h
+>
+
+11 
+	$maö
+()
+
+13 
+£ndsd
+;
+
+14 
+sockaddr_ö6
+ 
+§ˇddr
+;
+
+15 
+sockaddr_ö6
+ 
+d°addr
+;
+
+16 *
+s
+ = "haha, just forÅest";
+
+17 i‡((
+£ndsd
+ = 
+	`sockë
+(
+PF_INET6
+, 
+SOCK_DGRAM
+, 0)) < 0){
+
+18 
+	`¥ötf
+("err ");
+
+19 
+	`exô
+(1);
+
+21 
+	`mem£t
+(&
+§ˇddr
+, 0, (srcaddr));
+
+22 
+§ˇddr
+.
+sö6_Ámûy
+ = 
+AF_INET6
+;
+
+23 
+	`öë_±⁄
+(
+AF_INET6
+, "2001:da9:ff01:0102:0100::", &
+§ˇddr
+.
+sö6_addr
+);
+
+24 
+§ˇddr
+.
+sö6_p‹t
+ = 
+	`ht⁄s
+(5235);
+
+25 
+	`mem£t
+(&
+d°addr
+, 0, (dstaddr));
+
+26 
+d°addr
+.
+sö6_Ámûy
+ = 
+AF_INET6
+;
+
+27 
+	`öë_±⁄
+(
+AF_INET6
+, "2001:da9:ff01:0101:0200::", &
+d°addr
+.
+sö6_addr
+);
+
+28 
+d°addr
+.
+sö6_p‹t
+ = 
+	`ht⁄s
+(5235);
+
+29 i‡(
+	`böd
+(
+£ndsd
+, (
+sockaddr
+ *)(&
+§ˇddr
+), (srcaddr)) < 0)
+
+31 
+	`¥ötf
+("Ñecv sock bindÉrr");
+
+32 
+	`exô
+(1);
+
+34 
+	`£ndto
+(
+£ndsd
+, 
+s
+, 10, 0, &
+d°addr
+, (dstaddr));
+
+35 
+	}
+}
+
+	@
+1
+.
+0
+3
+32
+ivimap.c
+ivimap_old.c
+udpping.c

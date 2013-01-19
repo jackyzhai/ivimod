@@ -1,0 +1,27 @@
+#!/bin/sh
+
+# IVI start script
+# Copyright (C) 2009 Tsinghua University
+
+echo Assigning addresses to Interfaces
+#---------------------------------------------
+ip -6 addr add 2001:250:aaa0:103:3::2/64 dev eth0 
+ip    addr add 10.2.64.0/8 dev eth1 
+ip -6 addr add 2001:da8:a123:212::1/64 dev eth1 
+
+# IVI hgw configuration (eth0=IPv6; eth1=DS)
+
+ip -6 route add 2001:da8:a6a5:ca26:6e00::/72 via fec0::2  dev ivi1
+/root/ivi2/utils/ivimap -6 -z -b -l 48 -L 48 fec0::2
+
+ip route add default via 10.0.0.2 dev ivi0
+/root/ivi2/utils/ivimap -4 -z -n 202.38.110.0 -p 2001:da8:a6a5:: -l 48 -P 2001:da8:a6a5:: -L 48 -b -c 10.0.0.2
+ip -6 route add default via 2001:250:aaa0:103:3::1 dev eth0
+
+# ---
+
+#/usr/sbin/dhcpd -cf /etc/dhcpd.conf
+#/usr/local/sbin/radvd -C /etc/radvd.conf
+#/usr/sbin/dnsmasq
+
+
